@@ -27,7 +27,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="zh-Hant-TW">
-      <body className="antialiased">
+      <body suppressHydrationWarning className="antialiased" style={{cursor: "auto"}}>
         {children}
       </body>
     </html>
