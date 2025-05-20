@@ -1,8 +1,8 @@
-/** @type {import("next").NextConfig} */
+/** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: "export",
   images: {
-    unoptimized: true
+    domains: ['tina-psychologist.icu'],
+    unoptimized: process.env.NODE_ENV === 'development'
   }
 };
 
